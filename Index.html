@@ -1,0 +1,245 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>online tiket</title>
+
+
+  <link rel="stylesheet" href="/css/Index.css">
+  <link rel="stylesheet" href="/img/icons8-arrow-24.png">
+  <link rel="stylesheet" href="/js/Index.js">
+  <link rel="stylesheet" href="/plugin/css/bootstrap.css">
+  <link rel="stylesheet" href="/plugin/js/bootstrap.js">
+
+</head>
+
+<body>
+
+  <nav style="background-color: green; ">
+    <div class="row">
+      <div class="col-md-4">
+        <button class="button-mini">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle"
+            viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+            <path fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+          </svg>
+        </button>
+
+        <div class="col-4">
+          <button class=" button-mini">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+            </svg>
+            شهر
+          </button>
+        </div>
+
+
+
+        <div class="col-4">
+          <button class="button-mini">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+              viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg>
+            جستوجو
+          </button>
+
+        </div>
+
+
+
+
+
+        <div class="col-4">
+          <button class="button-mini">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+          </button>
+        </div>
+
+
+
+      </div>
+  </nav>
+
+  <div class=" row " style="background-color: khaki;">
+    <div class="col-2">
+      <a class="btn btn-primary" href="#" role="button">کمدی</a>
+    </div>
+    <div class="col-2">
+      <a class="btn btn-primary" href="#" role="button">درام</a>
+    </div>
+    <div class="col-2">
+      <a class="btn btn-primary" href="#" role="button">اکشن</a>
+    </div>
+    <div class="col-2">
+      <a class="btn btn-primary" href="#" role="button">علمی تخیلی</a>
+    </div>
+    <div class="col-2">
+      <a class="btn btn-primary" href="#" role="button">ورزشی</a>
+    </div>
+    <div>
+      <button class="btn btn-primary" onclick="fillcards()">
+        show Card
+      </button>
+
+    </div>
+  </div>
+  <div class="row" style="background-color:goldenrod" id="cards">
+    <div class="col-md-4 col-lg-3 col-sm-12 cards">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/img/malake.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <a href="" class="btn btn-primary">خرید بلیت</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-lg-3 col-sm-12 cards">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/img/gisom.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <a href="" class="btn btn-primary">خرید بلیت</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-lg-3 col-sm-12 cards">
+      <div class="col-sm-3 col-md-4 col-lg-4 ">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="/img/garib.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text"></p>
+            <a href="" class="btn btn-primary">خرید بلیت</a>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+    <div class="col-md-4 col-lg-3 col-sm-12 cards">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/img/deerakhtgerdo.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <a href="" class="btn btn-primary">خرید بلیت</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-lg-3 col-sm-12 cards">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/img/bufalo.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <a href="" class="btn btn-primary">خرید بلیت</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-lg-3 col-sm-12 cards">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/img/bufalo.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <a href="" class="btn btn-primary">خرید بلیت</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-lg-3 col-sm-12 cards">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/img/malake.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <a href="" class="btn btn-primary">خرید بلیت</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-lg-3 col-sm-12 cards">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/img/gisom.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <a href="" class="btn btn-primary">خرید بلیت</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-lg-3 col-sm-12 cards">
+      <div class="col-sm-3 col-md-4 col-lg-4 ">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="/img/garib.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text"></p>
+            <a href="" class="btn btn-primary">خرید بلیت</a>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+    <div class="col-md-4 col-lg-3 col-sm-12 cards">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/img/deerakhtgerdo.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <a href="" class="btn btn-primary">خرید بلیت</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-lg-3 col-sm-12 cards">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/img/bufalo.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <a href="" class="btn btn-primary">خرید بلیت</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-lg-3 col-sm-12 cards">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="/img/bufalo.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <a href="" class="btn btn-primary">خرید بلیت</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <script src="/js/Index.js"></script>
+
+
+</body>
+
+</html>
